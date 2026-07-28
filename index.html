@@ -8,6 +8,7 @@
   <meta property="og:title" content="Ranilo Dejumo — Agent Portfolio">
   <meta property="og:description" content="An interactive, classified-dossier-themed portfolio covering education, skills, projects, and contact info.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1200&q=80">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23080b11%22/><text x=%2250%22 y=%2268%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22%23e60012%22>▮</text></svg>">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -462,7 +463,7 @@
     .signpost-system {
       position: relative;
       width: 100%;
-      height: 520px;
+      height: 640px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -513,10 +514,10 @@
     .left-nodes {
       position: absolute;
       left: calc(50% - 270px);
-      top: 42%;
+      top: 26%;
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 20px;
       z-index: 3;
     }
     .node-arm {
@@ -561,7 +562,7 @@
     .right-nodes {
       position: absolute;
       right: calc(50% - 125px);
-      top: 38%;
+      top: 30%;
       z-index: 3;
     }
     .traffic-housing {
@@ -1374,12 +1375,12 @@
         </div>
 
         <div id="missionGridCompleted" class="mission-project-grid">
-          <div onclick="handleProjectClick('Operation RPG', 'Unity Game Project Blueprint', 'A detailed fantasy execution utilizing high-level collision algorithms and responsive layout movement profiles.', 'Built entirely in Unity using C#, this operation featured a custom state-machine driven combat system, inventory and quest logic, and a tile-based world with dynamic lighting. Collision was optimized using spatial partitioning to keep frame rates stable during large enemy encounters, and save data was handled through a serialized JSON persistence layer.', 'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=600&q=80')" class="project-tactical-card">
+          <div onclick="handleProjectClick('Operation RPG', 'Unity Game Project Blueprint', 'A detailed fantasy execution utilizing high-level collision algorithms and responsive layout movement profiles.', 'Built entirely in Unity using C#, this operation featured a custom state-machine driven combat system, inventory and quest logic, and a tile-based world with dynamic lighting. Collision was optimized using spatial partitioning to keep frame rates stable during large enemy encounters, and save data was handled through a serialized JSON persistence layer.', 'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=600&q=80', 'https://github.com/REPLACE-ME-GITHUB/REPLACE-ME-repo-name', '')" class="project-tactical-card">
             <div class="project-img-overlay" style="background-image: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=600&q=80')"></div>
             <div class="project-card-meta">FINISHED_TARGET // 01</div>
             <div class="project-card-title">UNITY GAME BUILD</div>
           </div>
-          <div onclick="handleProjectClick('Operation Web', 'Secure Client Directory', 'Constructed operational asynchronous data pipes designed to retrieve assets cleanly without latency parameters.', 'The directory was built as a full-stack web service with a secured REST API layer, token-based authentication, and rate-limited endpoints. Asynchronous data fetching was handled through queued background jobs to avoid blocking the main thread, and all client records were encrypted at rest with scheduled integrity audits.', 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80')" class="project-tactical-card">
+          <div onclick="handleProjectClick('Operation Web', 'Secure Client Directory', 'Constructed operational asynchronous data pipes designed to retrieve assets cleanly without latency parameters.', 'The directory was built as a full-stack web service with a secured REST API layer, token-based authentication, and rate-limited endpoints. Asynchronous data fetching was handled through queued background jobs to avoid blocking the main thread, and all client records were encrypted at rest with scheduled integrity audits.', 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80', 'https://github.com/REPLACE-ME-GITHUB/REPLACE-ME-repo-name', 'https://REPLACE-ME-live-demo-url.com')" class="project-tactical-card">
             <div class="project-img-overlay" style="background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80')"></div>
             <div class="project-card-meta">FINISHED_TARGET // 02</div>
             <div class="project-card-title">SECURE WEB SERVICE</div>
@@ -1425,6 +1426,22 @@
                 <span>/intel_feed</span>
               </div>
             </a>
+
+            <a href="https://github.com/REPLACE-ME-GITHUB" target="_blank" class="node-arm node-x">
+              <div class="arm-bracket"></div>
+              <div class="node-content">
+                <i class="fa-brands fa-github"></i>
+                <span>/REPLACE-ME-GITHUB</span>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/REPLACE-ME-LINKEDIN" target="_blank" class="node-arm node-instagram">
+              <div class="arm-bracket"></div>
+              <div class="node-content">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>/in/REPLACE-ME-LINKEDIN</span>
+              </div>
+            </a>
           </div>
 
           <div class="node-group right-nodes">
@@ -1435,8 +1452,11 @@
               <a href="https://facebook.com" target="_blank" class="traffic-light light-facebook" title="Secure Comms">
                 <i class="fa-brands fa-facebook-f"></i>
               </a>
-              <a href="#portfolio" class="traffic-light light-portfolio" title="Mission Achievements">
+              <a href="#" onclick="event.preventDefault(); switchPage(2); openDossierModal('achievements');" class="traffic-light light-portfolio" title="Mission Achievements">
                 <i class="fa-solid fa-graduation-cap"></i>
+              </a>
+              <a href="mailto:ranilojustinedejumo@gmail.com" class="traffic-light light-spotify" title="Direct Email">
+                <i class="fa-solid fa-envelope"></i>
               </a>
             </div>
           </div>
@@ -1446,6 +1466,9 @@
             <div class="badge-content">
               <h2>47</h2>
               <p>ACHIEVEMENTS CONFIRMED</p>
+              <a href="REPLACE-ME-resume.pdf" style="display:inline-block; margin-top:10px; font-size:10px; letter-spacing:0.1em; color:var(--ica-red); text-decoration:none; border:1px solid var(--ica-red); padding:6px 12px; text-transform:uppercase;">
+                <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+              </a>
             </div>
           </section>
         </div>
@@ -1477,14 +1500,14 @@
           <!-- SURFACE VIEW FORM -->
           <div id="surfaceAccessForm">
             <h2 class="deep-access-title">Contact me to access the deep information</h2>
-            <p class="deep-access-sub">Provide your registered communication endpoint below to request a cryptographically signed passkey.</p>
+            <p class="deep-access-sub">Submit your email below and I'll personally send you a passkey to unlock the restricted intel sections.</p>
             
             <div class="deep-input-group">
               <label class="deep-input-label">ENTER EMAIL ADDRESS</label>
-              <input type="email" id="deepAccessEmail" class="deep-email-field" placeholder="ranilo.dejumo@gsupport.com.ph" required>
+              <input type="email" id="deepAccessEmail" class="deep-email-field" placeholder="you@example.com" required>
             </div>
 
-            <button onclick="submitAccessRequest()" class="btn-give-access">GIVE ME ACCESS</button>
+            <button id="btnGiveAccess" onclick="submitAccessRequest()" class="btn-give-access">GIVE ME ACCESS</button>
           </div>
 
           <!-- DEEP INTEL MODE VIEW -->
@@ -1809,12 +1832,10 @@
       // Tech stack, experience, contact links, and skills stay visible under
       // Surface Access so recruiters/visitors can always see the essentials.
       const targets = [
-        { el: document.getElementById('dosAch'), baseTxt: '' },
         { el: document.getElementById('dosInt'), baseTxt: '' },
         { el: document.getElementById('catBtnFuture'), baseTxt: 'FUTURE DIRECTIVES' },
         { el: document.getElementById('misTab1'), baseTxt: '' },
         { el: document.getElementById('arcTab1'), baseTxt: '' },
-        { el: document.getElementById('arcTab2'), baseTxt: '' },
         { el: document.getElementById('arcTab3'), baseTxt: '' }
       ];
 
@@ -1843,7 +1864,7 @@
     }
 
     function openDossierModal(sectionKey) {
-      const gatedSections = ['achievements', 'interests'];
+      const gatedSections = ['interests'];
       if (clearanceLevel === "basic" && gatedSections.includes(sectionKey)) {
         showSystemAlert("Access Restrained", "Dossier key requires Deep Intel credentials.", "error");
         return;
@@ -1859,7 +1880,7 @@
       document.getElementById('popupModal').classList.remove('hidden');
     }
 
-    function handleProjectClick(title, subtitle, contextBody, fullDetails, imgSrc) {
+    function handleProjectClick(title, subtitle, contextBody, fullDetails, imgSrc, repoUrl, demoUrl) {
       if (clearanceLevel === "basic" && title.includes("Future")) {
         showSystemAlert("Access Restrained", "System blueprints encrypted.", "error");
         return;
@@ -1868,13 +1889,32 @@
       document.getElementById('passwordPromptSection').classList.add('hidden');
       document.getElementById('modalLabel').innerText = title.toUpperCase();
       document.getElementById('modalDesc').innerText = subtitle;
-      
+
+      const linkBtnStyle = "display:inline-flex; align-items:center; gap:8px; background-color:#1b2633; color:#ffffff; border:1px solid #374151; font-weight:700; font-size:11px; letter-spacing:0.1em; padding:10px 16px; text-transform:uppercase; cursor:pointer; text-decoration:none; transition:background-color 200ms;";
+      const isFuture = title.includes("Future");
+      const repoBtn = isFuture
+        ? ''
+        : (repoUrl
+            ? `<a href="${repoUrl}" target="_blank" style="${linkBtnStyle}"><i class="fa-brands fa-github"></i> View Repository</a>`
+            : `<button onclick="showSystemAlert('Repository Sealed', 'This repository link has not been published yet.', 'info')" style="${linkBtnStyle}"><i class="fa-brands fa-github"></i> Repo Coming Soon</button>`);
+      const demoBtn = (!isFuture && demoUrl)
+        ? `<a href="${demoUrl}" target="_blank" style="${linkBtnStyle}"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>`
+        : '';
+      const statusNote = isFuture
+        ? `<span style="display:inline-flex; align-items:center; gap:8px; color:#9ca3af; font-family:monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; padding:10px 4px;"><i class="fa-solid fa-clock" style="color:#e60012;"></i> Status: Planning Stage — No Repository Yet</span>`
+        : '';
+
       document.getElementById('injectedDataSpace').innerHTML = `
         <div style="text-align:left;">
           <div style="width:100%; height:140px; background-image:url('${imgSrc}'); background-size:cover; background-position:center; margin-bottom:12px; border:1px solid #374151;"></div>
           <p style="font-size:14px; color:#9ca3af; line-height:1.6;">${contextBody}</p>
           <p id="missionFullDetails" class="hidden" style="font-size:14px; color:#9ca3af; line-height:1.6; margin-top:12px; padding-top:12px; border-top:1px dashed #374151;">${fullDetails}</p>
-          <button id="missionReadMoreBtn" onclick="toggleMissionReadMore()" style="margin-top:16px; background-color:#e60012; color:#ffffff; border:none; font-weight:700; font-size:11px; letter-spacing:0.1em; padding:10px 18px; text-transform:uppercase; cursor:pointer; transition:background-color 200ms;">READ MORE</button>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:16px;">
+            <button id="missionReadMoreBtn" onclick="toggleMissionReadMore()" style="background-color:#e60012; color:#ffffff; border:none; font-weight:700; font-size:11px; letter-spacing:0.1em; padding:10px 18px; text-transform:uppercase; cursor:pointer; transition:background-color 200ms;">READ MORE</button>
+            ${repoBtn}
+            ${demoBtn}
+            ${statusNote}
+          </div>
         </div>
       `;
       document.getElementById('modalDataContent').classList.remove('hidden');
@@ -1907,41 +1947,68 @@
       }
     }
 
-    /* Triggered when user submits email under Tab 6 */
-    function submitAccessRequest() {
+    const DEEP_ACCESS_FORM_ENDPOINT = "https://formspree.io/f/xqernaer";
+
+    /* Triggered when user submits email under Tab 6. Actually POSTs to Formspree
+       so Ranilo receives a real notification and can reply with a passkey. */
+    async function submitAccessRequest() {
       const emailField = document.getElementById('deepAccessEmail');
       const enteredEmail = emailField.value.trim();
+      const btn = document.getElementById('btnGiveAccess');
 
       if (!enteredEmail || !enteredEmail.includes('@')) {
         showSystemAlert("Invalid Endpoint", "Please enter a valid email address.", "error");
         return;
       }
 
-      document.getElementById('modalMenuOptions').classList.add('hidden');
-      document.getElementById('passwordPromptSection').classList.add('hidden');
-      
-      document.getElementById('modalLabel').innerText = "DISPATCH COMPLETED";
-      document.getElementById('modalDesc').innerText = "Systems initialized. Welcome to my operational archive. Please select clearance levels to populate logs.";
+      const originalBtnText = btn.innerText;
+      btn.disabled = true;
+      btn.innerText = "TRANSMITTING...";
 
-      document.getElementById('injectedDataSpace').innerHTML = `
-        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px 10px;">
-          <div style="font-size: 48px; color: #00ff66; margin-bottom: 16px;">
-            <i class="fa-solid fa-envelope-circle-check"></i>
+      try {
+        const response = await fetch(DEEP_ACCESS_FORM_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify({
+            email: enteredEmail,
+            message: `Deep Access passkey request from portfolio visitor: ${enteredEmail}`
+          })
+        });
+
+        if (!response.ok) throw new Error("Formspree request failed");
+
+        document.getElementById('modalMenuOptions').classList.add('hidden');
+        document.getElementById('passwordPromptSection').classList.add('hidden');
+
+        document.getElementById('modalLabel').innerText = "DISPATCH COMPLETED";
+        document.getElementById('modalDesc').innerText = "Systems initialized. Welcome to my operational archive. Please select clearance levels to populate logs.";
+
+        document.getElementById('injectedDataSpace').innerHTML = `
+          <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px 10px;">
+            <div style="font-size: 48px; color: #00ff66; margin-bottom: 16px;">
+              <i class="fa-solid fa-envelope-circle-check"></i>
+            </div>
+            <p style="font-weight: 700; font-size: 15px; color: #ffffff; line-height: 1.6; max-width: 480px; margin-bottom: 12px;">
+              Request received. I review these personally, so it may take a little while — once verified, I'll email your passkey directly.
+            </p>
+            <span style="font-family: monospace; font-size: 11px; color: #9ca3af; letter-spacing: 0.1em; text-transform: uppercase;">
+              DISPATCH TARGET: ${enteredEmail}
+            </span>
           </div>
-          <p style="font-weight: 700; font-size: 15px; color: #ffffff; line-height: 1.6; max-width: 480px; margin-bottom: 12px;">
-            Thank you for reaching me, I am busy today, kindly wait for the message on your email for the generated code to access my deep info.
-          </p>
-          <span style="font-family: monospace; font-size: 11px; color: #9ca3af; letter-spacing: 0.1em; text-transform: uppercase;">
-            DISPATCH TARGET: ${enteredEmail}
-          </span>
-        </div>
-      `;
+        `;
 
-      document.getElementById('modalDataContent').classList.remove('hidden');
-      document.getElementById('modalCloseSection').classList.remove('hidden');
-      document.getElementById('popupModal').classList.remove('hidden');
-      
-      showSystemAlert("Request Transmitted", "Access dispatch logged in terminal queue.", "success");
+        document.getElementById('modalDataContent').classList.remove('hidden');
+        document.getElementById('modalCloseSection').classList.remove('hidden');
+        document.getElementById('popupModal').classList.remove('hidden');
+
+        showSystemAlert("Request Transmitted", "Access dispatch logged in terminal queue.", "success");
+        emailField.value = "";
+      } catch (err) {
+        showSystemAlert("Transmission Failed", "Could not reach the dispatch server. Please try again later.", "error");
+      } finally {
+        btn.disabled = false;
+        btn.innerText = originalBtnText;
+      }
     }
 
     function closeModal() {
@@ -1966,7 +2033,7 @@
     }
 
     function handleArchiveTabClick(index, tabName, headingTitle, textBody) {
-      if (clearanceLevel === "basic" && index > 0) {
+      if (clearanceLevel === "basic" && (index === 1 || index === 3)) {
         showSystemAlert("Access Restrained", "Archive sub-manifests locked.", "error");
         return;
       }
