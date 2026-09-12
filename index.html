@@ -176,6 +176,11 @@
   }
   .venue-photo-frame{ position:relative; border:1px solid var(--line); overflow:hidden; min-height:260px; background:var(--navy-deep); }
   .venue-photo-frame img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .illustrated-map-frame{
+    position:relative; max-width:980px; margin:56px auto 0; border:1px solid var(--line);
+    overflow:hidden; background:var(--navy-deep);
+  }
+  .illustrated-map-frame img{ width:100%; height:auto; display:block; }
   .venue-caption{ text-align:center; margin-top:10px; font-size:0.76rem; color:var(--ivory-dim); opacity:0.7; }
   @media (max-width:820px){ .venue-showcase{ grid-template-columns:1fr; } }
 
@@ -406,11 +411,13 @@
       </div>
     </div>
 
+    <div class="illustrated-map-frame">
+      <span class="corner-tr"></span><span class="corner-bl"></span>
+      <img src="map.png" alt="Illustrated map showing directions to Patio De Cecilia Events Place" loading="lazy">
+    </div>
+    <p class="venue-caption">Route overview — Patio De Cecilia Events Place along National Housing Authority Ave.</p>
+
     <div class="venue-showcase">
-      <div class="venue-photo-frame">
-        <span class="corner-tr"></span><span class="corner-bl"></span>
-        <img src="https://picsum.photos/id/1074/900/560" alt="Photo of Patio De Cecilia Events Place" loading="lazy">
-      </div>
       <div class="map-frame" style="margin-top:0;">
         <iframe
           title="Map to Patio De Cecilia Events Place"
@@ -428,8 +435,12 @@
           </span>
         </a>
       </div>
+      <div class="venue-photo-frame">
+        <span class="corner-tr"></span><span class="corner-bl"></span>
+        <img src="gate.png" alt="Entrance gate of Patio De Cecilia Events Place" loading="lazy">
+      </div>
     </div>
-    <p class="venue-caption">Replace this photo with an actual picture of the venue</p>
+    <p class="venue-caption">The venue entrance — look for this gate along National Housing Authority Ave.</p>
 
     <div class="roadmap">
       <h3 class="roadmap-title">How to Reach Patio De Cecilia Events Place</h3>
@@ -437,22 +448,22 @@
         <div class="roadmap-step">
           <div class="step-num">1</div>
           <div class="step-body">
-            <h4>Start from Landmark / Main Road</h4>
-            <p>e.g. Head south on XYZ Avenue for about 2 km</p>
+            <h4>From Marcos Highway</h4>
+            <p>Coming from Cogeo Gate 2 or Padilla, head toward the Marcos Highway intersection near St. Anthony of Padua Parish Church.</p>
           </div>
         </div>
         <div class="roadmap-step">
           <div class="step-num">2</div>
           <div class="step-body">
-            <h4>Next Turn / Junction</h4>
-            <p>e.g. Turn right at ABC Street, venue is on your left</p>
+            <h4>Turn onto National Housing Authority Ave.</h4>
+            <p>Turn from Marcos Highway onto National Housing Authority Ave. — you'll pass Neupetro Gas Station along the way.</p>
           </div>
         </div>
         <div class="roadmap-step">
           <div class="step-num">3</div>
           <div class="step-body">
             <h4>Arrival</h4>
-            <p>e.g. Enter through the main gate, parking available on-site</p>
+            <p>Patio De Cecilia Events Place is along National Housing Authority Ave., near Infant Jesus Academy. Look for the gray concrete gate.</p>
           </div>
         </div>
       </div>
@@ -654,7 +665,7 @@
 <div class="page" id="page-rsvp">
   <div class="page-header">
     <p class="eyebrow">Kindly Reply</p>
-    <h1>RSVP by October 3, 2026</h1>
+    <h1>RSVP by October 10, 2026</h1>
   </div>
   <section class="block rsvp">
     <div class="section-inner">
@@ -662,25 +673,14 @@
         <img src="https://api.qrserver.com/v1/create-qr-code/?size=260x260&margin=12&color=131f38&bgcolor=f6f0e4&data=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSfnqfOeKGIsytfZff2QJ2okZ_4d5PcbirYrVvsh5kH80tzEKw%2Fviewform" alt="QR code linking to the RSVP form" loading="lazy">
         <span>Scan or Tap to RSVP</span>
       </a>
-
-      <div class="gform-frame">
-        <iframe
-          title="RSVP Google Form"
-          src="https://docs.google.com/forms/d/e/1FAIpQLSfnqfOeKGIsytfZff2QJ2okZ_4d5PcbirYrVvsh5kH80tzEKw/viewform?embedded=true"
-          loading="lazy">
-          Loading…
-        </iframe>
-      </div>
-
+      <p class="rsvp-note">
+        Having trouble with the QR above? Use the "Open Form in New Tab" button to fill it out directly.
+      </p>
       <a class="rsvp-submit"
          href="https://docs.google.com/forms/d/e/1FAIpQLSfnqfOeKGIsytfZff2QJ2okZ_4d5PcbirYrVvsh5kH80tzEKw/viewform"
          target="_blank" rel="noopener">
         Open Form in New Tab
       </a>
-
-      <p class="rsvp-note">
-        Having trouble with the form above? Use the "Open Form in New Tab" button to fill it out directly.
-      </p>
     </div>
   </section>
 </div>
